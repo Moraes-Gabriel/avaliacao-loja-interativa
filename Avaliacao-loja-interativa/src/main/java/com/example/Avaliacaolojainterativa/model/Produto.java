@@ -24,11 +24,11 @@ public class Produto {
     @Column(nullable = false, unique = true)
     private String nome;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "fabricante_id")
     private Fabricante fabricante;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "categoria_id")
     private Categoria categoria;
 
