@@ -1,0 +1,42 @@
+.container {
+    max-width: 400px;
+    padding: 30px;
+    margin: 0 auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: white;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+}
+.titulo {
+    font-size: 32px;
+    margin-bottom: 33px;
+    color: blue;
+}
+
+label {
+    color: blue;
+}
+input {
+    margin: 15px 0;
+    width: 90%;
+    height: 30px;
+}
+select {
+    margin: 15px 0;
+    width: 90%;
+    height: 30px;
+}
+button {
+    background: #00008B;
+    color: white;
+    width: 150px;
+    align-self: center;
+    height: 40px;
+    border-radius: 13%;
+    border-color: white;
+}

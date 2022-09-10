@@ -1,0 +1,30 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.addp {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.div_main-modalProduto {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: #a6a6a6;
+}
+
+.div_topo_modal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__input{
+    margin: 10px 10px
+}
+.modal__label  {
+    margin-left: 10px;
+}

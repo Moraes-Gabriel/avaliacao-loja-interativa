@@ -1,0 +1,11 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.addp {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

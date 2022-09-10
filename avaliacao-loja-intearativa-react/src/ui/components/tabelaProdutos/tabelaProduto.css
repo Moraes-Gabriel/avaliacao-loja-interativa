@@ -1,0 +1,22 @@
+.inputTabelaProduto {
+
+    width: 33%;
+}
+
+.formTabelaProdutos {
+    margin-left: 30px;
+}
+
+.div_tabelaProduto {
+    display: flex;
+    width: 60%;
+    margin-left: 33px;
+}
+.div_tabelaProduto div{
+    margin-left: 75px;
+    width: 90px;
+}
+
+.div_tabelaProduto p{
+   color: blue;
+}

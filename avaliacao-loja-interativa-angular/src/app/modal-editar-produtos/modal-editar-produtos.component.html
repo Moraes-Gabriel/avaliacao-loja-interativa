@@ -1,0 +1,20 @@
+<section class="container">
+    <form action="" (ngSubmit)="criar()">
+        <h2 class="titulo">Produtos</h2>
+        <label for="fabricante">Nome do Produto</label>
+        <input type="text" for="nome" placeholder="Digite o nome do fabricante" [(ngModel)]="nome" name="nome">
+        <label for="">Fabricantes</label>
+        
+        <select [(ngModel)]="fabricanteId" name="fabricanteId" (change)="onChange($event)"> 
+            <option  *ngFor="let obj of fabricantes" [value]="obj?.id">{{obj?.nome}}</option>
+        </select>
+
+        <select [(ngModel)]="categoriaId" name="categoriaId"> 
+            <option  *ngFor="let categoria of categorias" [value]="categoria?.id">{{categoria?.nome}}</option>
+        </select>
+
+      
+        <input type="text" for="price" placeholder="Digite o preco do produto" [(ngModel)]="price" name="price">
+        <button type="submit">Adicionar Produto</button>
+    </form>
+</section>

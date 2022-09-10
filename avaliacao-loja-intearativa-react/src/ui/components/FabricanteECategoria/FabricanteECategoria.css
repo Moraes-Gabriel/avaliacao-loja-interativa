@@ -1,0 +1,14 @@
+h1 {
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.addfc { 
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}

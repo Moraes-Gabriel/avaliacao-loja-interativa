@@ -1,0 +1,48 @@
+.container {
+    max-width: 700px;
+    padding: 30px;
+    margin: 0 auto;
+}
+.content { 
+    background-color: white;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+}
+.titulo {
+    text-align: center;
+    color: blue;
+    font-size: 32px;
+}
+.div_pesquisar {
+    text-align-last: center;
+    margin: 25px 0;
+    color: blue;
+}
+
+tr {
+    color: blue;
+}
+td {
+    text-align-last: center;
+    color: blue;
+}
+
+/* Structure */
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  button {
+    background: #00008B;
+    color: white;
+    align-self: center;
+    border-radius: 13%;
+    border-color: white;
+    height: 33px;
+  }

@@ -1,0 +1,72 @@
+<section class="container">
+    <div class="content">
+        <h2 class="titulo">Produtos</h2>
+        <form>
+            <div class="div_pesquisar">
+                <label for="table-filtering-search" class="col-xs-3 col-sm-auto col-form-label">Full text
+                    search:</label>
+                <div class="col-xs-3 col-sm-auto">
+                    <input id="table-filtering-search" class="form-control" type="text"
+                     (change)="onChangeFilter()"
+                     name="filtrar"
+                     [(ngModel)]="filtrar"
+                     >
+                </div>
+            </div>
+        </form>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Fabricantes</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Preço</th>
+                </tr>
+            </thead>
+            <tbody *ngIf="!!!filtrar; else templateFiltrado">
+                <tr *ngFor="let produto of produtos; index as i">
+                    <td>
+                        {{produto?.id}}</td>
+                    <td>
+                        {{produto?.nome}}
+                    </td>
+                    <td>
+                        {{produto?.fabricante?.nome}}
+                    </td>
+                    <td>
+                        {{produto?.categoria?.nome}}
+                    </td>
+                    <td>
+                        {{produto?.price}}
+                    </td>
+                    <button>Editar</button>
+                    <button>Excluir</button>
+                </tr>
+            </tbody>
+            <ng-template #templateFiltrado>
+            <tbody>
+                <tr *ngFor="let produto of produtosFiltrado; index as i">
+                    <td>
+                        {{produto?.id}}</td>
+                    <td>
+                        {{produto?.nome}}
+                    </td>
+                    <td>
+                        {{produto?.fabricante?.nome}}
+                    </td>
+                    <td>
+                        {{produto?.categoria?.nome}}
+                    </td>
+                    <td>
+                        {{produto?.price}}
+                    </td>
+                    <button>Editar</button>
+                    <button>Excluir</button>
+                </tr>
+            </tbody>
+        </ng-template>
+        </table>
+    </div>
+</section>

@@ -1,0 +1,41 @@
+.inputTabelaProduto {
+
+    width: 33%;
+}
+
+.formTabelaProdutos {
+    margin-left: 30px;
+}
+
+.div_produto {
+    display: flex;
+    width: 60%;
+    margin-left: 33px;
+}
+
+.div_produto div {
+    margin-left: 75px;
+    width: 90px;
+}
+
+.div_produto-first_div {
+    margin-left: 0 !important;
+}
+
+.div_produto p {
+    color: blue;
+}
+
+.div_produto-main {
+    display: flex;
+}
+
+.div_botaoProduto {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.produto_button {
+    
+}
