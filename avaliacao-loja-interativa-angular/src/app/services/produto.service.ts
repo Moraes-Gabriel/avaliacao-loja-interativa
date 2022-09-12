@@ -26,4 +26,8 @@ export class ProdutoService {
   todas() {
     return this.httpClient.get<Produto[]>(this.url+ "/listar");
   }
+  excluir(id: number | undefined) {
+    return this.httpClient.delete<Produto[]>(this.url+ `/${id}`);
+  }
+  
 }

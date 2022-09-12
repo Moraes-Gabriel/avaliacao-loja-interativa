@@ -41,8 +41,8 @@
                     <td>
                         {{produto?.price}}
                     </td>
-                    <button>Editar</button>
-                    <button>Excluir</button>
+                    <button (click)="abrirModal(produto)">Editar</button>
+                    <button type="button" (click)="onClickExluirProduto(produto.id)">Excluir</button>
                 </tr>
             </tbody>
             <ng-template #templateFiltrado>
@@ -62,8 +62,8 @@
                     <td>
                         {{produto?.price}}
                     </td>
-                    <button>Editar</button>
-                    <button>Excluir</button>
+                    <button (click)="abrirModal(produto)">Editar</button>
+                    <button type="button" (click)="onClickExluirProduto(produto.id)">Excluir</button>
                 </tr>
             </tbody>
         </ng-template>

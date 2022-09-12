@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ModalEditarProdutosComponent } from './modal-editar-produtos.component';
+import { ModalEditarProdutosComponent } from "./ModalEditarProdutosComponent";
 
 describe('ModalEditarProdutosComponent', () => {
   let component: ModalEditarProdutosComponent;

@@ -38,7 +38,7 @@ public class ProdutoController {
     }
 
     @GetMapping("/listar/pesquisar/{nome}")
-    public List<ProdutoResponse> buscarTodas(@PathVariable String nome) {
+    public List<P   rodutoResponse> buscarTodas(@PathVariable String nome) {
         return listarProdutoPorPesquisarService.buscar(nome);
     }
     @PutMapping()
